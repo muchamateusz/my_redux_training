@@ -9,7 +9,11 @@ class App extends Component {
       <div className="App">
         <header className="App-header">REDUX WORKSPACE</header>
         <Workspace>
-          <Tile />
+          <Tile>Assignment No.1</Tile>
+          <Tile>Assignment No.2</Tile>
+          <Tile>Assignment No.3</Tile>
+          <Tile>Assignment No.4</Tile>
+          <Tile>Assignment No.5</Tile>
         </Workspace>
       </div>
     );

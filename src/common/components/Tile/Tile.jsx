@@ -1,15 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import "./Tile.css";
+import "./Tile.less";
 
 const propTypes = {
   className: PropTypes.string,
   children: PropTypes.any
 };
 
-const Tile = () => {
-  return <div />;
+const Tile = ({ className, children, ...rest }) => {
+  return <div className="tile">{children}</div>;
 };
 
 Tile.propTypes = propTypes;
