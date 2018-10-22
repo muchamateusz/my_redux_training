@@ -1,0 +1,12 @@
+.workspace {
+  display: flex;
+  flex: 1;
+  min-height: 50vh;
+  padding: 30px;
+}
+
+@media(max-width: 425px) {
+  .workspace {
+    padding: 15px;
+  }
+}
