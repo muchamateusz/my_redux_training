@@ -1,15 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
-import './Workspace.less';
+import classNames from "classnames";
+import "./Workspace.less";
 
 const propTypes = {
   className: PropTypes.string,
-  children: PropTypes.any,
+  children: PropTypes.any
 };
 
 const Workspace = ({ className, children, ...rest }) => {
   return (
-    <div className="workspace" {...rest}>
+    <div className={classNames("workspace", className)} {...rest}>
       {children}
     </div>
   );

@@ -5,8 +5,13 @@
 }
 
 .App-header {
-  background-color: #dddddd;
+  position: fixed;
+  width: 100%;
+  background-image: linear-gradient(to bottom,  #bee0db, white);
   min-height: 10vh;
+  border-bottom: 1px solid #dddddd;
+  top: 0;
+  left: 0;
   padding: 10px 0;
   display: flex;
   flex-direction: column;
@@ -14,6 +19,13 @@
   justify-content: center;
   font-size: 2rem;
   color: rgb(0, 102, 87);
+}
+
+@media (max-width: 425px) {
+  .App-header {
+    font-size: 1.5rem;
+    min-height: 7vh;
+  }
 }
 
 @keyframes App-logo-spin {

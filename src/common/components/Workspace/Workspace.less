@@ -1,11 +1,58 @@
 .workspace {
   display: grid;
-  min-height: 50vh;
-  padding: 30px;
+  grid-row-gap: 15px;
+  grid-column-gap: 15px;
+  grid-template-columns: 100%;
+
+  padding: 15px;
+  min-height: 10vh;
+  margin-top: calc(7vh + 20px);
 }
 
-@media(max-width: 425px) {
+@media (min-width: 425px) {
   .workspace {
-    padding: 15px;
+    margin-top: calc(10vh + 20px);
+    padding: 30px;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .workspace {
+    padding: 30px;
+    margin-top: calc(10vh + 20px);
+    grid-template-columns: 30% auto 30%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .workspace {
+    padding: 30px;
+    margin-top: calc(10vh + 20px);
+    grid-template-columns: 20% auto auto 20%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .workspace {
+    padding: 30px;
+    margin-top: calc(10vh + 20px);
+    grid-template-columns: 15% 15% auto auto 15% 15%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .workspace {
+    padding: 30px;
+    margin-top: calc(10vh + 20px);
+    grid-template-columns: auto 10% 10% 10% 10% 10% 10% 10% 10% auto;
+  }
+}
+
+@media (min-width: 2560px) {
+  .workspace {
+    padding: 30px;
+    margin-top: calc(10vh + 20px);
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
   }
 }

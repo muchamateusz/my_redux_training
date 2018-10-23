@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import classNames from "classnames";
 
 import "./Tile.less";
 
@@ -9,7 +10,11 @@ const propTypes = {
 };
 
 const Tile = ({ className, children, ...rest }) => {
-  return <div className="tile">{children}</div>;
+  return (
+    <div className={classNames("tile", className)} {...rest}>
+      {children}
+    </div>
+  );
 };
 
 Tile.propTypes = propTypes;
